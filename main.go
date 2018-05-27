@@ -2,11 +2,6 @@ package main
 
 import "fmt"
 
-var (
-	x    int    = 5
-	PORT string = "8080"
-)
-
 func main() {
 
 	var (
@@ -15,7 +10,7 @@ func main() {
 
 	fmt.Print("enter a temp in F: ")
 	fmt.Scanf("%f", &input)
-	output = FtoC(input)
+	output = fToC(input)
 	fmt.Println("Temp in C", output)
 
 	fmt.Print("Enter feet to conver to meters: ")
@@ -24,7 +19,7 @@ func main() {
 	fmt.Println("Meters:", output)
 }
 
-func FtoC(fTemp float64) float64 {
+func fToC(fTemp float64) float64 {
 	cTemp := (fTemp - 32) * (5.0 / 9)
 	return cTemp
 }

@@ -2,8 +2,6 @@ package main
 
 import "fmt"
 
-// this is a comment
-
 func main() {
-	fmt.Println("Hello there World")
+	fmt.Println((true && false) || (false && true) || !(false && false))
 }
